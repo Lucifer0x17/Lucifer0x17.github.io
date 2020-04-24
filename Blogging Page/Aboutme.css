@@ -1,0 +1,40 @@
+/*border: #bdc3c7
+date: #3498db
+h2 color: #2c3e50
+font: source sans pro*/
+body{
+	border: 20px solid #bdc3c7;
+	padding: 20px;
+	width: 80%;
+	max-width: 700px;
+	margin: 20px auto;
+	font-family: source sans pro;
+}
+
+h3{
+	letter-spacing: .2em;
+	color: #3498db;
+	margin-bottom: 35px;
+}
+
+h2{
+	color: #2c3e50;
+	font-size: 2em;
+
+	margin: 30px 0;
+}
+
+.brder{
+	border-left: 5px solid #bdc3c7;
+	padding-left: 5px;
+}
+
+hr{
+	color: #bdc3c7;
+	height: 1px;
+	border: 2px solid;
+	padding: 0;
+	margin-top: 30px;
+	margin-bottom: 50px;
+
+}
