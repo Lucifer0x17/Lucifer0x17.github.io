@@ -122,6 +122,9 @@ article#main-col{
 	float: left;
 	width: 65%;
 }
+ul{
+	padding-left: 0;
+}
 ul#services li{
 	list-style: none;
 	padding: 20px;
