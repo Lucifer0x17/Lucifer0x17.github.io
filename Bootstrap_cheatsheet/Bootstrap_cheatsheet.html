@@ -9,9 +9,62 @@
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <style>
+      .navbar{
+        margin-bottom: 0;
+        border-radius: 0;
+      }
+    </style>
   </head>
   <body>
+    <!--NAV BAR-->
+    <nav class="navbar navbar-inverse">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Bootstrap CheatSheet</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+            <li><a href="#">Link</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">One more separated link</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-->
+    </nav>
+
+    <!--JUMBOTRON-->
+
+    <div class="jumbotron text-center">
+      <div class="container">
+        <h1>Welcome to my website</h1>
+        <p>So basically this website contain all the important document which i felt is important when I was learning Boostrap. The contents doesn't contain uses any Js properties except a little use of js in navbar.</p>
+        <a href="#" class="btn btn-primary">Read More</a>
+      </div>
+    </div>
+
     <!--TYPOGRAPHY-->
+
     <div class="container">  
       <h1 class="page-header">Hello, world! <small>Secondary Text</small></h1>
       <p class="lead"><mark>Lorem Ipsum</mark> is simply dummy text of the printing and <del>typesetting</del> industry. <u>Lorem Ipsum</u> has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
@@ -371,10 +424,59 @@
       <button class="btn btn-primary" type="button">
         Messages <span class="badge">2</span>
       </button>
-
-      
     </div>
     
+
+    <hr>
+    <br>
+
+    <!--GRIDS-->
+    <div class="container">
+      <!--
+      In grids consider the screen is divided into 8 equal parts i.e sum of numbers after md is 12 i.e 8+4 or 3+3+3+3
+
+      md stands for medium screen size
+      alternatives..
+      
+      md  -- medium will break colums in rows from tablet size and smaller
+      
+      sm  -- small i.e grid will break columns in rows(like flex) on mobile size only
+
+      xs  -- extra small never break colums allways appear in grid format
+      -->
+      <div class="row">
+        <div class="col-md-8">
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+        </div>
+        <div class="col-md-4">
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+        </div>
+      </div>
+      <hr>
+      <div class="row">
+        <div class="col-md-3">
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+        </div>
+        <div class="col-md-3">
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+        </div>
+        <div class="col-md-3">
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+        </div>
+        <div class="col-md-3">
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+        </div>
+      </div>
+      <hr>
+      <div class="row">
+        <div class="col-md-6">
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+        </div>
+        <div class="col-md-6">
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+        </div>
+      </div>
+    </div>
 
     <div style="height:400px"></div>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
