@@ -1,0 +1,64 @@
+body{
+	background-color:black !important ;
+	margin: 0;
+	padding: 0; 
+}
+a:visited{
+	color: none;
+}
+body .container{
+	font-family: 'Special Elite', cursive;
+}
+.container .btn-lg{
+	font-size: 25px;
+}
+body .jumbotron{
+	color: #ffffff;
+	background: #555555;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+body .spacing{
+	margin-top: 300px;
+}
+
+body a:hover{
+	text-decoration: underline dotted #ffffff;
+}
+body .acme{
+	color: #ffffff;
+	font:100px 'Special Elite', cursive; 
+	padding: 10px;
+	text-align: center;
+}
+body .acme span{
+	color: #ff6a00;
+}
+body .acme span:hover{
+	color: #c45200;
+}
+body .blog{
+	color: #2060a1;
+	font:80px 'Special Elite', cursive; 
+	padding: 10px;
+	text-align: center;
+}
+body .CheatSheet{
+	color: #ffffff;
+	font:90px 'Special Elite', cursive; 
+	padding: 10px;
+	text-align: center;
+}
+body .CheatSheet span{
+	color:#85396d;
+}
+body .CheatSheet span:hover{
+	color: #632b52;
+}
+footer{
+	text-align: center;
+	background: #555555;
+	padding-top: 2px;
+	color: #ffffff;
+	font:16px 'Special Elite', cursive;
+}
