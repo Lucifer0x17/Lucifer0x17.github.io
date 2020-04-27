@@ -62,3 +62,14 @@ footer{
 	color: #ffffff;
 	font:16px 'Special Elite', cursive;
 }
+@media(max-width: 768px){
+	body .acme{
+		font:60px 'Special Elite', cursive !important; 
+	}
+	body .blog{
+		font:40px 'Special Elite', cursive !important; 
+	}
+	body .CheatSheet{
+		font:50px 'Special Elite', cursive !important; 
+	}
+}
