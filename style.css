@@ -1,69 +1,116 @@
 body{
-	background-color:black !important ;
-	margin: 0;
-	padding: 0; 
+    background: rgba(0, 0, 0, 0.9);
+    margin: 0;
+    color: #fff;
+    font:22px/1.5  'Berkshire Swash', cursive;
+
 }
-a:visited{
-	color: none;
-}
-body .container{
-	font-family: 'Special Elite', cursive;
-}
-.container .btn-lg{
-	font-size: 25px;
-}
-body .jumbotron{
-	color: #ffffff;
-	background: #555555;
-	padding-top: 15px;
-	padding-bottom: 15px;
-}
-body .spacing{
-	margin-top: 300px;
+.showcase::after{
+    content: '';
+    height: 100vh;
+    width: 100%;
+    background: url("img/showcase.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+    filter: blur(12px);
+    -webkit-filter: blur(12px);
+    transition: all 1000ms;
 }
 
-body a:hover{
-	text-decoration: underline dotted #ffffff;
+.showcase:hover::after{
+    filter: blur(0px);
+    -webkit-filter: blur(0px);
 }
-body .acme{
-	color: #ffffff;
-	font:70px 'Special Elite', cursive; 
-	padding: 10px;
-	text-align: center;
+.showcase:hover .content{
+    filter: blur(2px);
+    -webkit-filter: blur(2px);
 }
-body .acme span{
-	color: #ff6a00;
+.content{
+    position: absolute;
+    z-index: 1;
+    top: 10%;
+    left: 50%;
+    margin-top: 105px;
+    margin-left: -145px;
+    width: 300px;
+    height: 350px;
+    text-align: center;
+    transition: all 1000ms;
 }
-body .container #heading{
-	color: white;
-	text-decoration: underline solid white;
+#special{
+    margin-bottom: 0;
+    text-align: center;
 }
-body .acme span:hover{
-	color: #c45200;
+.content .title{
+    font:3rem 'Pacifico', cursive;
+    margin-bottom: 1rem;
 }
-body .blog{
-	color: #2060a1;
-	font:50px 'Special Elite', cursive; 
-	padding: 10px;
-	text-align: center;
+.content .text{
+    line-height: 1.7;
+    margin-top: 1rem;
 }
-body .CheatSheet{
-	color: #ffffff;
-	font:50px 'Special Elite', cursive; 
-	padding: 10px;
-	text-align: center;
+.container{
+    max-width: 960px;
+    margin: auto;
+    overflow: hidden;
+    padding: 4rem 1rem;
 }
-body .CheatSheet span{
-	color:#85396d;
+.grid-3{
+    display: grid;
+    grid-gap: 40px;
+    grid-template-columns: repeat(3,1fr);
 }
-body .CheatSheet span:hover{
-	color: #632b52;
+
+.grid-2{
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(2,1fr);
+}
+.center{
+    text-align: center;
+    margin: auto;
+}
+.bg-light{
+    background: #f4f4f4;
+    color: #333333;
+}
+.bg-dark{
+    background: #333333;
+    color: #f4f4f4;
+}
+a:visited{
+    color: inherit;
+    text-decoration: none;
 }
 footer{
-	text-align: center;
-	background: #555555;
-	padding-top: 2px;
-	color: #ffffff;
-	font:16px 'Special Elite', cursive;
+    padding: 2.2rem;;
+}
+footer p{
+    margin: 0;;
+}
+
+/*Small screens*/
+ 
+@media(max-width: 760px){
+    .showcase::after{
+        height: 50vh;
+    }
+    .content{
+        top: 5%;
+        margin-top: 5px;
+    }
+    .content .text{
+        display: none;
+    }
+    .grid-3,
+    .grid-2{
+        grid-template-columns: 1fr;
+    }
+    .project div{
+        border-bottom: #333 dashed 1px;
+        padding: 1.2rem 1rem;
+    }
 }
 
