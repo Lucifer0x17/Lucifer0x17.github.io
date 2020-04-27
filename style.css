@@ -27,7 +27,7 @@ body a:hover{
 }
 body .acme{
 	color: #ffffff;
-	font:100px 'Special Elite', cursive; 
+	font:70px 'Special Elite', cursive; 
 	padding: 10px;
 	text-align: center;
 }
@@ -39,13 +39,13 @@ body .acme span:hover{
 }
 body .blog{
 	color: #2060a1;
-	font:80px 'Special Elite', cursive; 
+	font:50px 'Special Elite', cursive; 
 	padding: 10px;
 	text-align: center;
 }
 body .CheatSheet{
 	color: #ffffff;
-	font:90px 'Special Elite', cursive; 
+	font:50px 'Special Elite', cursive; 
 	padding: 10px;
 	text-align: center;
 }
@@ -62,14 +62,4 @@ footer{
 	color: #ffffff;
 	font:16px 'Special Elite', cursive;
 }
-@media(max-width: 768px){
-	body .acme{
-		font:60px 'Special Elite', cursive !important; 
-	}
-	body .blog{
-		font:40px 'Special Elite', cursive !important; 
-	}
-	body .CheatSheet{
-		font:50px 'Special Elite', cursive !important; 
-	}
-}
+
