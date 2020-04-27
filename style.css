@@ -34,6 +34,10 @@ body .acme{
 body .acme span{
 	color: #ff6a00;
 }
+body .container #heading{
+	color: white;
+	text-decoration: underline solid white;
+}
 body .acme span:hover{
 	color: #c45200;
 }
