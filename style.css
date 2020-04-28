@@ -87,6 +87,7 @@ a:visited{
 }
 a{
 	text-decoration: none;
+    text-decoration-color: #ffffff;
 }
 footer{
     padding: 2.2rem;;
