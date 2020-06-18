@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <title>TensorFlow.js OBD Demo</title>
+    <link rel="stylesheet" href="loader.css">
     <!-- Load TensorFlow.js-->
     <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.0.0/dist/tf.min.js"></script>
     <!-- Load the coco-ssd model. -->
@@ -15,10 +16,28 @@
     <script src="https://unpkg.com/babel-standalone@6.26.0/babel.min.js"></script>
 </head>
 <body>
-    <h1>Trying to create OBD Demo</h1>
-    <!--to load react-->
-    <script src="detect.js" type="text/babel"></script>
-    <!--for react-->
-    <div id="root"></div>
+    <div class="loader">
+        <h1 id="heading">Loading the model</h1>
+        <div class="container">
+            <div class="dot dot-1"></div>
+            <div class="dot dot-2"></div>
+            <div class="dot dot-3"></div>
+        </div>
+    
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+            <defs>
+                <filter id="goo">
+                    <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+                    <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 21 -7" />
+                </filter>
+            </defs>
+        </svg>
+    </div>
+   <div class="main">
+        <h1>Trying to create OBD Demo</h1>
+        <!--for react-->
+        <div id="root"></div>
+   </div>
+<script src="detect.js" type="text/babel"></script>
 </body>
 </html>
