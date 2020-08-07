@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Github Finder</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container-2">
+        <div class="img"></div>
+        <form class="form-group">
+                <input type="text" id="user" placeholder="Enter the username">
+            <input type="submit" value="Search" id="submit">
+        </form>
+    </div>
+    <div class="container-1">
+        <div class='loader loader3'>
+            <div>
+                <div>
+                    <div>
+                        <div>
+                            <div>
+                                <div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <img class="img rellax" id = "pic" data-rellax-speed="-5">
+        <div id="name" class="rellax" data-rellax-speed="-4"></div>
+        <div id="username" class="rellax" data-rellax-speed="-4"></div>
+        <div id="joined" class="rellax" data-rellax-speed="-4"></div>
+        <div class="wrapper">
+            <div class="grid-1">
+                <div class="about rellax" data-rellax-speed="-5">
+                    <div id="1"></div>
+                    <div class="small">Repositories</div>
+                </div>
+                <div class="about rellax" data-rellax-speed="-5">
+                    <div id="2"></div>
+                    <div class="small">Followers</div>
+                </div>
+                <div class="about rellax" data-rellax-speed="-5">
+                    <div id="3"></div>
+                    <div class="small">Following</div>
+                </div>
+            </div>
+        </div>
+        <hr class="rellax" data-rellax-speed="6">
+        <div class="wrapper">
+            <div class="grid-2">
+                <div class="details rellax" data-rellax-speed="3">
+                    <span class="la">Top languages</span>
+                    <canvas id="Top-lang" class="pdt"></canvas>
+                </div>
+                <div class="details rellax" data-rellax-speed="2.8">
+                    <span class="la">Stars Per Language</span>
+                    <canvas id="Stars-per-lang" class="pdt"></canvas>
+                </div>
+                <div class="details rellax" data-rellax-speed="2.5">
+                    <span class="la">Most Starred</span>
+                    <canvas id="Most-starred" class="pdt"></canvas>
+                </div>
+            </div>
+        </div>
+        <div id="head" class="rellax" data-rellax-speed="3">Top Repos</div>
+        <div class="wrapper">
+            <div class="grid-2">
+                <div class="repo rellax" data-rellax-speed="3">
+                    <div class="repo-head">
+                        <a id="repo-1"></a>
+                    </div>
+                    <div id="readme1" class="pdt">
+                        
+                    </div>
+                </div>
+                <div class="repo rellax" data-rellax-speed="2">
+                    <div class="repo-head">
+                        <a id="repo-2"></a>
+                    </div>
+                    <div id="readme2" class="pdt">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    <script src="rellax.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
