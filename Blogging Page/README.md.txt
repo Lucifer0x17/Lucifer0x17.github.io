@@ -1,1 +1,0 @@
-So this is a personal blogging page i am trying to make as my assignment after completing HTML5 and CSS.

@@ -32,7 +32,6 @@ function loadEventListener(){
 function addTask(e){
 
     e.preventDefault();
-
     if(taskInput.value === ''){
         alert('Add a task');
     }else{
