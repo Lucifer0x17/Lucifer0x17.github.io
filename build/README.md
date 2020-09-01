@@ -1,0 +1,1 @@
+This is a project i created while I'm still learning front-end.. I used jason-placeholder to fetch the ata and store it... So, it is not a working app soon i'll be completing it.
